@@ -48,6 +48,7 @@ button{
 
 .container{
     padding: 50px 0;
+    width: 100%;
 
 
 }
@@ -103,8 +104,8 @@ button{
     font-size: 32px;
     border-radius: 50%;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: #f8f0e3;
+    color: black;
     position: absolute;
     bottom: 32px;
     right: 40px;
@@ -121,7 +122,7 @@ button{
 .scroll__icon{
     width: 20px;
     height: 30px;
-    border: 2px solid black;
+    border: 2px solid #f8f0e3;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -132,7 +133,7 @@ button{
     content: "";
     width: 4px;
     height: 6px;
-background-color: #242424;
+background-color: #f8f0e3;
 border-radius: 2px;
 animation: scroll 1000ms infinite alternate-reverse;
 }
@@ -254,4 +255,35 @@ transform: translateY(-50%);
 
     .project__wrapper:hover .project__wrapper--bg{
         opacity: 0.7;
+        }
+
+        /*FOOTER*/
+        footer{
+            background-color:  #f8f0e3;
+            display: flex;
+            padding: 6% 0%;
+        }
+
+        .footer__row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer__logo--image{
+            width:70px;
+            filter: invert(1); 
+    
+        }
+
+        .footer__social--list{
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .footer__social--link, .footer__copyright{
+            color: black;
         }
