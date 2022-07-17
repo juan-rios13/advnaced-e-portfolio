@@ -66,6 +66,32 @@ button{
      margin: 0 auto;
      padding: 0 12px;
 }
+
+input, textarea{
+    width: 100%;
+    background-color: #242424;
+    color: #f8f0e3;
+    border: 3px solid #c0c4cc;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    height: 40px;
+}
+
+textarea{
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
+
+input:hover, textarea:hover{
+    border-color: white;
+}
+
+input:focus, textarea:focus{
+    border-color: white;
+}
+
 /* LANDING PAGE */
 #landing-page{
     min-height: 100vh;
@@ -210,6 +236,7 @@ margin: 0 12px;
 
 .modal__half{
     width: 50%;
+    position: relative;
 }
 
 .modal__about{
@@ -224,6 +251,10 @@ margin: 0 12px;
 .modal__contact{
     background-color: black;
     color: #f8f0e3;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .modal__languages{
@@ -267,11 +298,66 @@ margin: 0 12px;
 
 .modal__sub-title{
     margin: 12px 0 24px 0;
+    font-size: 14px;
 }
 
 .modal__para{
     margin-bottom: 12px;
     line-height: 1.75;
+}
+
+.form__item{
+    margin-bottom: 20px;
+}
+
+.form__submit{
+    background-color: purple;
+    border: 2px solid purple;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+.form__submit:hover{
+    border-color: white;
+    background-color: transparent;
+}
+
+.form__submit:active{
+    border-color: purple;
+    color: purple;
+}
+
+.modal__overlay--loading{
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    z-index: -1;
+}
+
+.fa-spinner{
+    animation: spinner 750ms infinite;
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+}
 }
 /* PROJECTS */
 
@@ -378,4 +464,3 @@ transform: translateY(-50%);
         .footer__social--link, .footer__copyright{
             color: black;
         }
-
