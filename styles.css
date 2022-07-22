@@ -635,7 +635,17 @@ transform: translateY(-50%);
                 border-radius: 0;
             }
         }
+
+        .shape{
+            visibility: hidden;
+            display: none;
+        }
         /* small phones*/
+        .shape{
+            visibility: hidden;
+            display: none;
+        }
+
         @media(max-width:480px){
 
             .title{
