@@ -634,19 +634,20 @@ transform: translateY(-50%);
                 width: 100%;
                 border-radius: 0;
             }
+            .shape{
+                visibility: hidden;
+                display: none;
+            }
         }
 
-        .shape{
-            visibility: hidden;
-            display: none;
-        }
-        /* small phones*/
-        .shape{
-            visibility: hidden;
-            display: none;
-        }
+   
+     
 
         @media(max-width:480px){
+            .shape{
+                visibility: hidden;
+                display: none;
+            }
 
             .title{
                 font-size: 52px;
